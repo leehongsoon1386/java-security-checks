@@ -1,0 +1,11 @@
+pipeline {
+  agent any
+  stages {
+    stage('Verify') {
+      steps {
+        // This command lists the files on a macOS/Linux machine
+        sh 'ls -al'
+      }
+    }
+  }
+}
